@@ -36,7 +36,7 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
 
 
     const p = document.createElement('p');
-    p.innerText = ` ${donateAmount} Taka is Donated for faming-2024 at Feni, Bangladesh`
+    p.innerText = ` ${donateAmount} Taka is Donated for Flood in Feni, Bangladesh`
     document.getElementById('history-container1').appendChild(p);
    }
    else{
@@ -60,7 +60,7 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
     alert('You Have Donate for Humankind')
 
     const p = document.createElement('p');
-    p.innerText = ` ${donateAmount} Taka is Donated for faming-2024 at Feni, Bangladesh`
+    p.innerText = ` ${donateAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`
     document.getElementById('history-container2').appendChild(p);
    }
    else{
