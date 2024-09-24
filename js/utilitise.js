@@ -13,3 +13,9 @@ function getDonationAmountSub(id){
     const donationSubNumber = parseFloat(donationSub);
     return donationSubNumber;
 }
+function buttonActive(id){
+    document.getElementById('donation-btn').classList.add('bg-[rgb(188,244,97)]')
+    document.getElementById('history-btn').classList.add('bg-[rgb(188,244,97)]')
+    document.getElementById(id).classList.remove('bg-[rgb(188,244,97)]')
+    
+}
