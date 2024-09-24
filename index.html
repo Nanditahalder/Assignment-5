@@ -25,35 +25,56 @@
             padding-top: 0;
             padding-bottom: 0;
         }
+        @media screen and (max-width:600px) {
+            #hide-element{
+                display: none;
+            }
+            body{
+                width: 100vw;
+            }
+        }
     </style>
 </head>
-<body class="">
+<body>
     <header class="bg-[rgb(249,247,243)] pt-8 pb-14">
-            <div class="mx-auto w-4/5">
-                <div class="navbar ">
+            <div class="lg:mx-auto lg:w-4/5">
+                <div class="navbar">
                     <div class="navbar-start">           
-                        <a class="btn bg-[rgb(188,244,97)] px-8 text-xl">Blog</a>            
+                        <a id="hide-element" class="btn bg-[rgb(188,244,97)] px-8 text-xl">Blog</a>            
                     </div>
-                    <div class="navbar-center">
-                      <img src="assets/logo.png" alt=""><a class="btn btn-ghost text-2xl">Donate Bangladesh</a>
-                    </div>
+                    <div class="navbar-center" id="hide-element">
+                      <img src="assets/logo.png" alt=""><a class="btn btn-ghost font-bold text-2xl">Donate Bangladesh</a>
+                    </div> 
                     <div class="navbar-end">
                         <div class="stats shadow">
-                            <div class="stat flex">
+                            <div id="hide-element" class="stat flex">
                                 <img src="assets/coin.png" alt="" srcset=""><div class="stat-value">98600 BDT</div>
                             </div>
                           </div>
                     </div>
                 </div>
+                <!-- small divice navigation style start-->
+                 <div class=" w-80 mx-auto lg:hidden ">
+                    <div class="flex">
+                        <img src="assets/logo.png" alt=""><a class="btn btn-ghost text-center font-bold text-2xl" >Donate Bangladesh</a><br>
+                    </div>
+                    <div class="flex w-6/12 mx-auto mt-4">
+                        <img src="assets/coin.png"><div>98600 BDT</div>
+                    </div>
+                    <div class="w-5/12 mx-auto mt-4">
+                        <a class="btn bg-[rgb(188,244,97)] px-4 text-xl">Blog</a>
+                    </div>
+                 </div>
+                <!-- small divice navigation style end-->
             </div>
     </header>
     <main>
         <!-- button section start -->
         <div>
-            <div class="w-96 mx-auto mt-16">
-                <div class="w-4/6 mx-auto">
+            <div class="lg:w-96 text-center lg:mx-auto mt-16">
+                <div class="lg:w-4/6 lg:mx-auto">
                     <button class="btn btn-xs text-black bg-[rgb(188,244,97)] sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
-                    <button class="btn btn-xs text-gray-400 px-8 btn-outline btn-lg">History</button>
+                    <button class="btn btn-xs text-gray-400  lg:px-8 btn-outline lg:btn-lg">History</button>
                 </div>
             </div>
         </div>
@@ -61,58 +82,58 @@
             
             <!-- Hero section start -->
              <!-- content 1 -->
-            <div class="w-5/6 mx-auto mt-16">
-                <div class="hero border b-1 rounded-lg w-5/6 mx-auto py-4 m-8">
+            <div class="lg:w-5/6 lg:mx-auto mt-16">
+                <div class="hero border b-1 rounded-lg lg:w-5/6 lg:mx-auto lg:py-4 lg:m-8">
                     <div class="hero-content flex-col lg:flex-row">
                       <img
                         src="assets/noakhali.png"
-                        class="w-2/4 mx-auto rounded-lg shadow-2xl" />
-                      <div class="w-2/5 mx-auto py-16">
+                        class="lg:w-2/4 lg:mx-auto rounded-lg shadow-2xl" />
+                      <div class="lg:w-2/5 lg:mx-auto lg:py-16">
                         <button class="btn text-xl"><img src="assets/coin.png" alt="" srcset=""><div class="">0 BDT</div></button>
                         <h1 class="text-2xl mt-4 font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                        <p class="py-6">
+                        <p class="lg:py-6">
                           The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation wil help provide essential supplies and to those affected by this disaster.Every contributionn, big or small, makes difference. Please join us in supporting the relief efforts and making a positives impact on the lives of those in need.
                         </p>
-                        <input placeholder="Write Donation Amount" class="border w-5/6 px-4 rounded-lg b-1 py-4" type="text">
-                        <button class=" w-5/6 px-4 rounded-lg b-1 py-4 font-bold bg-[rgb(188,244,97)] text-xl mt-4">Donate Now</button>
+                        <input placeholder="Write Donation Amount" class="border lg:w-5/6 lg:px-4 rounded-lg b-1 py-2 px-2 lg:py-4" type="text">
+                        <button class=" lg:w-5/6 px-4 rounded-lg b-1 lg:py-4 py-2 font-bold bg-[rgb(188,244,97)] text-xl lg:mt-4">Donate Now</button>
                       </div>
                     </div>
                   </div>
             </div>
              <!-- content 2 -->
-            <div class="w-5/6 mx-auto mt-16">
-                <div class="hero border b-1 rounded-lg w-5/6 mx-auto py-10 m-8">
+            <div class="lg:w-5/6 lg:mx-auto lg:mt-16">
+                <div class="hero border b-1 rounded-lg lg:w-5/6 lg:mx-auto lg:py-10 lg:m-8">
                     <div class="hero-content flex-col lg:flex-row">
                       <img
                         src="assets/feni.png"
-                        class="w-2/4 mx-auto rounded-lg shadow-2xl" />
-                      <div class="w-2/5 mx-auto py-16">
-                        <button class="btn text-xl"><img src="assets/coin.png" alt="" srcset=""><div class="">600 BDT</div></button>
+                        class="lg:w-2/4 lg:mx-auto rounded-lg shadow-2xl" />
+                      <div class="lg:w-2/5 mx-auto lg:py-16">
+                        <button class="btn text-xl"><img src="assets/coin.png" alt="" srcset=""><div>600 BDT</div></button>
                         <h1 class="text-2xl mt-4 font-bold">Donate for Flood Relief in Feni, Bangladesh</h1>
                         <p class="py-6">
                           The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Tagether, we can after crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real differance. Please consider donating today to assist those in urgent need.
                         </p>
-                        <input placeholder="Write Donation Amount" class="border w-5/6 px-4 rounded-lg b-1 py-4" type="text">
-                        <button class=" w-5/6 px-4 rounded-lg b-1 py-4 font-bold bg-[rgb(188,244,97)] text-xl mt-4">Donate Now</button>
+                        <input placeholder="Write Donation Amount" class="border lg:w-5/6 lg:px-4 px-2 py-2 rounded-lg b-1 lg:py-4" type="text">
+                        <button class=" lg:w-5/6 lg:px-4 px-2 py-2 rounded-lg b-1 lg:py-4 font-bold bg-[rgb(188,244,97)] text-xl lg:mt-4">Donate Now</button>
                       </div>
                     </div>
                   </div>
             </div>
              <!-- content 3 -->
-            <div class="w-5/6 mx-auto mt-16">
-                <div class="hero border b-1 rounded-lg w-5/6 mx-auto py-10 m-8">
+            <div class="lg:w-5/6 lg:mx-auto lg:mt-16">
+                <div class="hero border b-1 rounded-lg lg:w-5/6 lg:mx-auto lg:py-10 lg:m-8">
                     <div class="hero-content flex-col lg:flex-row">
                       <img
                         src="assets/quota-protest.png"
-                        class="w-2/4 mx-auto rounded-lg shadow-2xl" />
-                      <div class="w-2/5 mx-auto py-16">
-                        <button class="btn text-xl"><img src="assets/coin.png" alt="" srcset=""><div class="">2400 BDT</div></button>
+                        class="lg:w-2/4 lg:mx-auto rounded-lg shadow-2xl" />
+                      <div class="lg:w-2/5 lg:mx-auto lg:py-16">
+                        <button class="btn text-xl"><img src="assets/coin.png" alt="" srcset=""><div>2400 BDT</div></button>
                         <h1 class="text-2xl mt-4 font-bold">Aid for Injured in the Quota Movement</h1>
                         <p class="py-6">
                           The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehobilitation, and necessary supplies to those affected. By contributing , you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brove individuals in their time of need.
                         </p>
-                        <input placeholder="Write Donation Amount" class="border w-5/6 px-4 rounded-lg b-1 py-4" type="text">
-                        <button class=" w-5/6 px-4 rounded-lg b-1 py-4 font-bold bg-[rgb(188,244,97)] text-xl mt-4">Donate Now</button>
+                        <input placeholder="Write Donation Amount" class="border lg:w-5/6 lg:px-4 rounded-lg b-1 px-2 py-2 lg:py-4" type="text">
+                        <button class=" lg:w-5/6 lg:px-4 px-2 py-2 rounded-lg b-1 lg:py-4 font-bold bg-[rgb(188,244,97)] text-xl lg:mt-4">Donate Now</button>
                       </div>
                     </div>
                   </div>
