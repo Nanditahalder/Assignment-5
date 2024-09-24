@@ -8,6 +8,11 @@ document.getElementById('donate-btn').addEventListener('click',function(){
     const donationSubBalance = donationAmountSub - donateAmount;
     document.getElementById('donation-sub').innerText = donationSubBalance;
     alert('You Have Donate for Humankind')
+
+
+    const p = document.createElement('p');
+    p.innerText = ` ${donateAmount} Taka is Donated for faming-2024 at Feni, Bangladesh`
+    document.getElementById('history-container').appendChild(p);
    }
    else{
     alert('Invalid Donation Amount')
@@ -28,6 +33,11 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
     const donationSubBalance = donationAmountSub - donateAmount;
     document.getElementById('donation-sub').innerText = donationSubBalance;
     alert('You Have Donate for Humankind')
+
+
+    const p = document.createElement('p');
+    p.innerText = ` ${donateAmount} Taka is Donated for faming-2024 at Feni, Bangladesh`
+    document.getElementById('history-container1').appendChild(p);
    }
    else{
     alert('Invalid Donation Amount')
@@ -48,6 +58,10 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
     const donationSubBalance = donationAmountSub - donateAmount;
     document.getElementById('donation-sub').innerText = donationSubBalance;
     alert('You Have Donate for Humankind')
+
+    const p = document.createElement('p');
+    p.innerText = ` ${donateAmount} Taka is Donated for faming-2024 at Feni, Bangladesh`
+    document.getElementById('history-container2').appendChild(p);
    }
    else{
     alert('Invalid Donation Amount')
